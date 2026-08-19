@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051410"/>
+      <stop offset="40%" stop-color="#0D3026"/>
+      <stop offset="70%" stop-color="#174A3A"/>
+      <stop offset="100%" stop-color="#082019"/>
+    </linearGradient>
+    <linearGradient id="distMtn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D5A4C"/>
+      <stop offset="100%" stop-color="#0A241C"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2EBE6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#143D32" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E4C87F"/>
+      <stop offset="50%" stop-color="#B99A52"/>
+      <stop offset="100%" stop-color="#8A6E2E"/>
+    </linearGradient>
+    <linearGradient id="flag" x1="0%" y1="0%" x2="100%" y2="30%">
+      <stop offset="0%" stop-color="#0A281F"/>
+      <stop offset="25%" stop-color="#1B5241"/>
+      <stop offset="45%" stop-color="#0D3328"/>
+      <stop offset="65%" stop-color="#246853"/>
+      <stop offset="85%" stop-color="#133C2F"/>
+      <stop offset="100%" stop-color="#09221B"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9E9E94"/>
+      <stop offset="50%" stop-color="#767C74"/>
+      <stop offset="100%" stop-color="#2A332E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- Distant Mountains -->
+  <path d="M500,480 L620,310 L680,360 L780,240 L840,320 L940,210 L1020,330 L1120,260 L1220,370 L1360,280 L1460,380 L1600,420 L1600,650 L500,650 Z" fill="url(#distMtn)"/>
+  <polygon points="780,240 750,290 810,290" fill="url(#snow)"/>
+  <polygon points="940,210 900,280 970,270" fill="url(#snow)"/>
+  <polygon points="1120,260 1085,315 1150,305" fill="url(#snow)"/>
+  <polygon points="1360,280 1325,335 1390,325" fill="url(#snow)"/>
+
+  <!-- Hills and Valleys -->
+  <path d="M300,650 Q600,520 900,630 T1600,590 L1600,900 L300,900 Z" fill="#184838"/>
+  <path d="M950,900 Q1200,680 1600,640 L1600,900 Z" fill="#0B261E"/>
+
+  <!-- Circassian Stone Tower on Right -->
+  <g transform="translate(1320, 290)">
+    <ellipse cx="60" cy="400" rx="90" ry="25" fill="#030C09" opacity="0.6"/>
+    <polygon points="10,400 110,400 102,150 18,150" fill="url(#tower)"/>
+    <polygon points="10,150 110,150 115,130 5,130" fill="url(#tower)"/>
+    <polygon points="14,130 106,130 104,80 16,80" fill="url(#tower)"/>
+    <polygon points="60,10 8,80 112,80" fill="url(#tower)"/>
+    <line x1="60" y1="10" x2="60" y2="0" stroke="#B99A52" stroke-width="3"/>
+    <circle cx="60" cy="0" r="3" fill="#B99A52"/>
+    <path d="M48,395 L48,340 Q60,330 72,340 L72,395 Z" fill="#040D09"/>
+    <rect x="56" y="250" width="8" height="28" rx="3" fill="#040D09"/>
+    <rect x="54" y="165" width="12" height="24" rx="2" fill="#040D09"/>
+    <rect x="56" y="95" width="8" height="18" rx="2" fill="#040D09"/>
+  </g>
+
+  <!-- Circassian Silk Flag on Left -->
+  <path d="M0,0 L780,0 Q680,180 750,340 T660,680 Q580,820 0,900 Z" fill="url(#flag)"/>
+
+  <!-- 12 Stars & 3 Arrows -->
+  <g transform="translate(420, 360) scale(1.15)">
+    <!-- 3 Crossed Arrows -->
+    <g stroke="url(#gold)" stroke-width="5" stroke-linecap="round" fill="none">
+      <line x1="0" y1="70" x2="0" y2="-60"/>
+      <polyline points="-12,-42 0,-64 12,-42" stroke-width="5" fill="url(#gold)"/>
+      <line x1="0" y1="50" x2="-10" y2="62"/>
+      <line x1="0" y1="50" x2="10" y2="62"/>
+
+      <line x1="55" y1="55" x2="-45" y2="-45"/>
+      <polyline points="-44,-24 -48,-48 -24,-44" stroke-width="5" fill="url(#gold)"/>
+      <line x1="42" y1="42" x2="38" y2="56"/>
+      <line x1="42" y1="42" x2="56" y2="38"/>
+
+      <line x1="-55" y1="55" x2="45" y2="-45"/>
+      <polyline points="24,-44 48,-48 44,-24" stroke-width="5" fill="url(#gold)"/>
+      <line x1="-42" y1="42" x2="-56" y2="38"/>
+      <line x1="-42" y1="42" x2="-38" y2="56"/>
+    </g>
+
+    <!-- 12 Stars -->
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(-140, -45)" fill="url(#gold)"/>
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(-115, -80)" fill="url(#gold)"/>
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(-80, -110)" fill="url(#gold)"/>
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(-42, -125)" fill="url(#gold)"/>
+    <polygon points="0,-12 3.5,-3.5 12,-3.5 5,1.5 7.5,8 0,3.5 -7.5,8 -5,1.5 -12,-3.5 -3.5,-3.5" transform="translate(0, -130)" fill="url(#gold)"/>
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(42, -125)" fill="url(#gold)"/>
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(80, -110)" fill="url(#gold)"/>
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(115, -80)" fill="url(#gold)"/>
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(140, -45)" fill="url(#gold)"/>
+    <polygon points="0,-9 2.7,-2.7 9,-2.7 3.8,0.9 5.6,6.3 0,2.7 -5.6,6.3 -3.8,0.9 -9,-2.7 -2.7,-2.7" transform="translate(-50, -78)" fill="url(#gold)"/>
+    <polygon points="0,-10 3,-3 10,-3 4,1 6,7 0,3 -6,7 -4,1 -10,-3 -3,-3" transform="translate(0, -85)" fill="url(#gold)"/>
+    <polygon points="0,-9 2.7,-2.7 9,-2.7 3.8,0.9 5.6,6.3 0,2.7 -5.6,6.3 -3.8,0.9 -9,-2.7 -2.7,-2.7" transform="translate(50, -78)" fill="url(#gold)"/>
+  </g>
+</svg>

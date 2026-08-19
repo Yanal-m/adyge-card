@@ -1,0 +1,6 @@
+{
+  "name": "Adyge Card",
+  "description": "Circassian Business Network — Discover, connect, and support Circassian businesses, services, and craftspeople worldwide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
